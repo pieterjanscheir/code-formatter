@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Code, Cloud } from 'lucide-react'
 import './globals.css'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
 	title: 'Magical Code Formatter',
@@ -29,13 +30,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 							/>
 						</div>
 						<span className='font-bold text-lg tracking-tight bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text'>
-							CodeCraft
+							CodeFormatter
 						</span>
 					</div>
 				</header>
 				<div className='pt-20'>{children}</div>
 				<footer className='text-center py-8 text-muted-foreground/70 text-sm mt-10 bg-gradient-to-t from-secondary/20 to-transparent border-t border-border/20'>
-					<p>&copy; {currentYear} scheir.eu (Pieter-Jan Scheir) • Built with magic & code</p>
+					<Link
+						href='https:/scheir.eu'
+						className='hover:underline underline-offset-4'
+						target='_blank'
+					>
+						&copy; {currentYear} scheir.eu (Pieter-Jan Scheir) • Built with magic & code
+					</Link>
 				</footer>
 			</body>
 		</html>
