@@ -17,19 +17,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			suppressHydrationWarning
 		>
 			<body className='font-sans antialiased'>
-				<header className='fixed top-0 left-0 right-0 flex justify-between items-center px-8 py-4 border-b border-border/30 bg-background/70 backdrop-blur-lg z-10'>
+				<header className='fixed top-0 left-0 right-0 flex justify-between items-center px-8 py-4 border-b border-border/30 bg-background/70 backdrop-blur-sm z-10'>
 					<div className='flex items-center gap-3'>
 						<div className='relative'>
 							<Code
 								className='text-primary'
 								size={26}
 							/>
-							<Cloud
-								className='text-primary/50 absolute -top-2 -right-2'
-								size={14}
-							/>
 						</div>
-						<span className='font-bold text-lg tracking-tight bg-gradient-to-r from-primary to-accent text-transparent bg-clip-text'>
+						<span className='font-bold text-lg tracking-tight bg-gradient-to-r from-primary to-indigo-500 text-transparent bg-clip-text'>
 							CodeFormatter
 						</span>
 					</div>
@@ -41,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 						className='hover:underline underline-offset-4'
 						target='_blank'
 					>
-						&copy; {currentYear} scheir.eu (Pieter-Jan Scheir) • Built with magic & code
+						&copy; {currentYear} scheir.eu (Pieter-Jan Scheir) • Made with love & code
 					</Link>
 				</footer>
 			</body>

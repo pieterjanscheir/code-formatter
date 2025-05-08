@@ -1,4 +1,4 @@
-import { CodeFormatter } from './components/code-formatter'
+import { CodeFormatter } from '../components/code-formatter'
 
 export default function Home() {
 	return (
@@ -16,6 +16,7 @@ export default function Home() {
 			<div className='absolute inset-0 bg-gradient-to-b from-background/5 via-accent/5 to-primary/5 -z-10' />
 
 			<div className='relative z-10'>
+				``
 				<CodeFormatter />
 			</div>
 		</main>
