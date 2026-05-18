@@ -1,7 +1,3 @@
-const nextConfig = {
-	experimental: {
-		fontLoaders: [{ loader: '@next/font/google', options: { subsets: ['latin'] } }],
-	},
-}
+const nextConfig = {}
 
 module.exports = nextConfig
